@@ -1,0 +1,418 @@
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	background-color: #000B1F;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.brain {
+	width: 100%;
+	height: 100%;
+}
+
+.top-title {
+	width: 100%;
+	height: 12%;
+}
+
+.title-bg {
+	width: 100%;
+	height: 80px;
+	line-height: 80px;
+	background-image: url(../img/title2.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.center-contain-title {
+	text-align: center;
+}
+
+.bigScreenName {
+	width: 108px;
+	height: 28.9px;
+	font-size: 22px;
+	font-family: Microsoft YaHei;
+	font-weight: bold;
+	/* line-height: 28.9px; */
+	color: rgba(255, 255, 255, 1);
+	letter-spacing: 12px;
+}
+
+.backHomePage {
+	width: 116px;
+	height: 23.4px;
+	background: linear-gradient(270deg, rgba(0, 141, 255, 0.1) 0%, rgba(0, 141, 255, 1) 50%, rgba(0, 141, 255, 0) 100%);
+	/* opacity:0.5; */
+	position: absolute;
+	right: 53px;
+	top: 30px;
+	text-align: center;
+	line-height: 23.4px;
+}
+
+.flexcontentPlan {
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+	/* height: 80%; */
+
+}
+
+.flex-item {
+	background-color: rgba(0, 132, 227, 0.15);
+	width: 23%;
+	height: 86%;
+}
+
+.center-contain {
+	background-color: rgba(0, 132, 227, 0.15);
+	width: 51%;
+	height: 86%;
+	margin-left:0.95%;
+}
+
+/* echart容器宽高 */
+#register-echart-histogram,
+#contract-echart-histogram {
+	height: 50%;
+}
+
+#budget-stackEchart-histogram {
+	height: 30%;
+	margin: 8px auto 0;
+}
+
+#meetfee-pancake,
+#trainfee-pancake,
+#travelfee-pancake,
+#receptionfee-pancake,
+#abroadfee-pancake {
+	width: 100%;
+	height: 114px;
+	/* margin: 8px auto 0; */
+}
+
+#scrap-Echart-histogram {
+	height: 32%;
+	margin: 8px auto 0;
+}
+
+#assetIntangible-echart-histogram,
+#assetFixedUse-echart-histogram {
+	height: 17%;
+}
+#assetFixed-echart-histogram{
+	height: 18%;
+}
+#assetScrap-echart-histogram{
+	height: 17%;
+}
+/************************左边部分*************************/
+.left-contain {
+	display: inline-block;
+	border: 2px solid rgba(0, 48, 96, 1);
+}
+
+.left-contain-top {
+	/* width: 336.5px; */
+	height: 46%;
+	/* background: rgba(0, 132, 227, 0.15); */
+	/* border: 2px solid rgba(0, 48, 96, 1); */
+	/* margin-left: 26px; */
+	margin-bottom: 11px;
+}
+
+.left-contain-top-title {
+	width: 100%;
+	height: 23.4px;
+	background: linear-gradient(270deg, rgba(0, 141, 255, 0.1) 0%, rgba(0, 141, 255, 1) 50%, rgba(0, 141, 255, 0) 100%);
+	line-height: 23.4px;
+	text-align: center;
+}
+
+.left-contain-top-content {
+	width: 80%;
+	height: 90px;
+	background-image: url(../img/form1.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	margin: 10px auto;
+}
+
+.left-contain-top-statText {
+	padding: 14px 7px 0 17px;
+}
+
+.left-contain-top-registered,
+.left-contain-top-shopping,
+.left-contain-top-totalTimes {
+	height: 20.3px;
+	font-size: 13px;
+	font-family: Microsoft YaHei;
+	font-weight: 280;
+	line-height: 20.3px;
+
+}
+
+.left-contain-top-registered {
+	color: #84D2CC;
+}
+
+.left-contain-top-shopping {
+	color: #F5E46B;
+	margin: 4px 0;
+}
+
+.registerTimes,
+.shoppingTimes {
+	color: rgba(255, 255, 255, 1);
+}
+
+.left-contain-top-totalTimes {
+	color: rgba(255, 255, 255, 1);
+}
+
+.left-contain-bottom-content {
+	width: 80%;
+	height: 110px;
+	background-image: url(../img/form2.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	margin: 0 auto;
+	margin-top:10px;
+}
+
+.left-title,
+.right-title {
+	width: 80px;
+	height: 20.3px;
+	font-size: 16px;
+	font-family: Microsoft YaHei;
+	font-weight: 300;
+	/* line-height: 26px; */
+	color: rgba(255, 255, 255, 1);
+	opacity: 1;
+}
+
+.left-contain-bottom {
+	/* width: 336.5px; */
+	height: 53%;
+	/* border: 2px solid rgba(0, 48, 96, 1); */
+	/* background: rgba(0, 132, 227, 0.15); */
+	/* margin-left: 26px; */
+}
+
+.left-contain-bottom-contract {
+	padding-top: 10px;
+	padding-left: 26px;
+}
+
+.left-contain-bottom-text {
+	height: 20.3px;
+	font-size: 13px;
+	font-family: Microsoft YaHei;
+	font-weight: 280;
+	line-height: 20.3px;
+}
+
+.left-contain-bottom-executeing {
+	color: rgba(255, 255, 255, 1);
+}
+
+.left-contain-bottom-cleared {
+	color: rgba(132, 210, 204, 1);
+	margin: 4px 0;
+}
+
+.left-contain-bottom-unclear {
+	color: rgba(245, 228, 107, 1);
+	margin-bottom: 4px;
+}
+
+.left-contain-bottom-contractTimes {
+	color: rgba(243, 124, 120, 1);
+}
+
+/************************中间部分*************************/
+.center-contain {
+	position: absolute;
+	display: inline-block;
+	border: 2px solid rgba(0, 48, 96, 1);
+}
+
+.budgetContainer {
+	/* width: 612px; */
+	height: 100%;
+	/* background: rgba(0, 132, 227, 0.15); */
+	/* border: 2px solid rgba(0, 48, 96, 1); 
+	margin-top: 10px;
+	margin-left: 11px;
+	margin-right: 11px;*/
+}
+.budgetText td:nth-child(odd){
+	width:10%;
+	text-aline:center;
+}
+.center-contain-title {
+	/* position: absolute;
+		left: 860px;
+		top: 29px; */
+}
+
+.center-contain-top-title {
+	width: 100%;
+	height: 23.4px;
+	background: linear-gradient(270deg, rgba(0, 141, 255, 0.1) 0%, rgba(0, 141, 255, 1) 50%, rgba(0, 141, 255, 0) 100%);
+	/* opacity:0.5; */
+	text-align: center;
+}
+
+.center-title {
+	width: 56.8px;
+	height: 20.3px;
+	font-size: 17px;
+	font-family: Microsoft YaHei;
+	font-weight: 400;
+	line-height: 20.3px;
+	color: rgba(255, 255, 255, 1);
+	opacity: 1;
+}
+
+.center-contain-top-content {
+	margin-top: 5px;
+	width:100%;
+}
+
+.center-contain-top-budget {
+	/* width: 612px; */
+	height: 10%;
+	background: rgba(0, 66, 127, 1);
+	display:flex;
+	flex-wrap:wrap;
+    display: -webkit-flex; /* Safari */
+    align-items:center;
+}
+.flexItem{
+	flex: 1;
+	text-align: center;
+}
+.center-contain-top-text {
+	
+	font-family: Microsoft YaHei;
+	font-weight: bold;
+}
+
+.center-contain-top-budgetAll,.center-contain-top-budgetText {
+	color: rgba(255, 255, 255, 1);
+	font-size: 14px;
+}
+.center-contain-top-freezing,.center-contain-top-freezText{
+	color: rgba(243, 124, 120, 1);
+	font-size: 13px;
+}
+
+.center-contain-top-cleared,.center-contain-top-clearText {
+	color: rgba(132, 210, 204, 1);
+	font-size: 13px;
+}
+
+.center-contain-top-surplus,.center-contain-top-surText {
+	color: rgba(231, 197, 59, 1);
+	font-size: 13px;
+}
+
+#budget-stackEchart-histogram {
+	background: linear-gradient(271deg, #00365D 0%, #0065AE 52%, #003A64 100%);
+	/* opacity: 0.2; */
+}
+
+.pancake-histogram {
+	display: inline-block;
+}
+
+.pancakeContent {
+	/* padding: 0 14px; */
+}
+
+.pancake-text {
+	width: 108.5px;
+	height: 23.4px;
+	line-height: 23.4px;
+	background: linear-gradient(270deg, rgba(0, 141, 255, 0.1) 0%, #008DFF 50%, rgba(0, 141, 255, 0) 100%);
+	/* opacity: 0.5; */
+	text-align: center;
+}
+
+.trainfee-pancake-histogram,
+.receptionfee-pancake-histogram {
+	/* margin: 0 9px; */
+}
+
+.pancakeContent {
+	text-align: center;
+	height:20%;
+}
+.pancakeContent div{
+	margin: 0 1%;
+}
+/************************右边部分*************************/
+.right-contain {
+	/* width: 330.5px; */
+	 /*height: 555px; */
+	background: rgba(0, 132, 227, 0.15);
+	border: 2px solid rgba(0, 48, 96, 1);
+	display: inline-block;
+	position: absolute;
+	right: 5px;
+	/* margin-top: 2px; */
+}
+
+.right-contain-top-title {
+	/* width: 336.5px; */
+	height: 23.4px;
+	background: linear-gradient(270deg, rgba(0, 141, 255, 0.1) 0%, rgba(0, 141, 255, 1) 50%, rgba(0, 141, 255, 0) 100%);
+	/* opacity:0.5; */
+	text-align: center;
+}
+
+.right-contain-top-content {
+	width: 80%;
+	height: 16%;
+	background-image: url(../img/form3.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	margin: 0 auto;
+	margin-top:10px;
+}
+
+.right-contain-top-asset {
+	padding-top: 10px;
+	padding-left: 20px;
+}
+
+.right-contain-top-assetText {
+	font-size: 13px;
+	font-family: Microsoft YaHei;	
+	font-weight: 280;
+	color: rgba(255, 255, 255, 1);
+}
+
+.right-contain-top-assetFixed {
+	margin: 10px 0;
+}
+
+.right-contain-top-assetIntangible {
+	margin-bottom: 4px;
+}
+}

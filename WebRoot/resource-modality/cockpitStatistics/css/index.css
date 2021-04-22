@@ -1,0 +1,735 @@
+@media only screen and (min-width:1200px) {
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	body,html {
+		width: 100%;
+		height: 100%;
+	}
+	/* echart容器宽高 */
+	#register-echart-histogram,#contract-echart-histogram{
+		height: 150px;
+	}
+	#budget-stackEchart-histogram{
+		height: 123px;
+		margin: 8px auto 0;
+	}
+	#meetfee-pancake,#trainfee-pancake,#travelfee-pancake,#receptionfee-pancake,#abroadfee-pancake{
+		width: 90px; 
+		height: 140px;
+		margin: 8px auto 0;
+	}
+	#scrap-Echart-histogram{
+		height: 140px;margin: 8px auto 0;
+	}
+	#assetIntangible-echart-histogram,#assetFixed-echart-histogram,#assetFixedUse-echart-histogram,#assetScrap-echart-histogram{
+		height: 95px;
+		margin: 5px auto 0;
+	}
+	/************************整体*************************/
+	.brain {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		/* overflow: hidden; */
+		background-color: #000B1F;
+	}
+	
+	.title-bg {
+		width: 100%;
+		height: 80px;
+		line-height: 80px;
+		background-image: url(../img/title2.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+	.center-contain-title{
+		text-align: center;
+	}
+	.bigScreenName {
+		width: 108px;
+		height: 28.9px;
+		font-size: 22px;
+		font-family: Microsoft YaHei;
+		font-weight: bold;
+		line-height: 28.9px;
+		color: rgba(255, 255, 255, 1);
+		letter-spacing: 12px;
+	}
+	
+	.backHomePage {
+		width: 116px;
+		height: 23.4px;
+		background: linear-gradient(270deg, rgba(0, 141, 255, 0.1) 0%, rgba(0, 141, 255, 1) 50%, rgba(0, 141, 255, 0) 100%);
+		/* opacity:0.5; */
+		position: absolute;
+		right: 53px;
+		top: 30px;
+		text-align: center;
+		line-height: 23.4px;
+	}
+	
+	/************************左边部分*************************/
+	.left-contain {
+		display: inline-block;
+	}
+	
+	.left-contain-top {
+		width: 336.5px;
+		height: 260px;
+		background: rgba(0, 132, 227, 0.15);
+		border: 2px solid rgba(0, 48, 96, 1);
+		margin-left: 26px;
+		margin-bottom: 11px;
+	}
+	
+	.left-contain-top-title {
+		width: 100%;
+		height: 23.4px;
+		background: linear-gradient(270deg, rgba(0, 141, 255, 0.1) 0%, rgba(0, 141, 255, 1) 50%, rgba(0, 141, 255, 0) 100%);
+		line-height: 23.4px;
+		text-align: center;
+	}
+	
+	.left-contain-top-content {
+		width: 230px;
+		height: 90px;
+		background-image: url(../img/form1.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 100%;
+		margin-top:3px;
+		margin-left: 48px;
+	}
+	
+	.left-contain-top-statText {
+		padding: 14px 7px 0 17px;
+	}
+	
+	.left-contain-top-registered,
+	.left-contain-top-shopping,
+	.left-contain-top-totalTimes {
+		height: 20.3px;
+		font-size: 14px;
+		font-family: Microsoft YaHei;
+		font-weight: 280;
+		line-height: 20.3px;
+	
+	}
+	
+	.left-contain-top-registered {
+		color: #84D2CC;
+	}
+	
+	.left-contain-top-shopping {
+		color: #F5E46B;
+		margin: 4px 0;
+	}
+	
+	.registerTimes,
+	.shoppingTimes {
+		color: rgba(255, 255, 255, 1);
+	}
+	
+	.left-contain-top-totalTimes {
+		color: rgba(255, 255, 255, 1);
+	}
+	
+	.left-contain-bottom-content {
+		width: 230px;
+		height: 119px;
+		background-image: url(../img/form2.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 100%;
+		margin-top:3px;
+		margin-left: 48px;
+	}
+	
+	.left-title,
+	.right-title {
+		width: 80px;
+		height: 20.3px;
+		font-size: 19px;
+		font-family: Microsoft YaHei;
+		font-weight: 300;
+		/* line-height: 26px; */
+		color: rgba(255, 255, 255, 1);
+		opacity: 1;
+	}
+	
+	.left-contain-bottom {
+		width: 336.5px;
+		height: 280px;
+		border: 2px solid rgba(0, 48, 96, 1);
+		background: rgba(0, 132, 227, 0.15);
+		margin-left: 26px;
+	}
+	
+	.left-contain-bottom-contract {
+		padding-top: 17px;
+		padding-left: 26px;
+	}
+	
+	.left-contain-bottom-text {
+		height: 20.3px;
+		font-size: 16px;
+		font-family: Microsoft YaHei;
+		font-weight: 280;
+		line-height: 20.3px;
+	}
+	
+	.left-contain-bottom-executeing {
+		color: rgba(255, 255, 255, 1);
+	}
+	
+	.left-contain-bottom-cleared {
+		color: rgba(132, 210, 204, 1);
+		margin: 4px 0;
+	}
+	
+	.left-contain-bottom-unclear {
+		color: rgba(245, 228, 107, 1);
+		margin-bottom: 4px;
+	}
+	
+	.left-contain-bottom-contractTimes {
+		color: rgba(243, 124, 120, 1);
+	}
+	
+	/************************中间部分*************************/
+	.center-contain {
+		position: absolute;
+		display: inline-block;
+	
+	}
+	
+	.budgetContainer {
+		width: 612px;
+		height: 545px;
+		background: rgba(0, 132, 227, 0.15);
+		border: 2px solid rgba(0, 48, 96, 1);
+		margin-top: 10px;
+		margin-left: 11px;
+		margin-right: 11px;
+	}
+	
+	.center-contain-title {
+		/* position: absolute;
+		left: 860px;
+		top: 29px; */
+	}
+	
+	.center-contain-top-title {
+		width: 100%;
+		height: 23.4px;
+		background: linear-gradient(270deg, rgba(0, 141, 255, 0.1) 0%, rgba(0, 141, 255, 1) 50%, rgba(0, 141, 255, 0) 100%);
+		/* opacity:0.5; */
+		text-align: center;
+	}
+	
+	.center-title {
+		width: 56.8px;
+		height: 20.3px;
+		font-size: 20px;
+		font-family: Microsoft YaHei;
+		font-weight: 400;
+		line-height: 20.3px;
+		color: rgba(255, 255, 255, 1);
+		opacity: 1;
+	}
+	
+	.center-contain-top-content {
+		margin-top: 5px;
+	}
+	
+	.center-contain-top-budget {
+		/* width: 612px; */
+		height: 69px;
+		background: rgba(0, 66, 127, 1);
+		margin: auto;
+		padding-top: 13px;
+		padding-left: 16px;
+	}
+	
+	.center-contain-top-text {
+		height: 20.3px;
+		font-size: 14px;
+		font-family: Microsoft YaHei;
+		font-weight: bold;
+		line-height: 20.3px;
+	}
+	
+	.center-contain-top-budgetAll {
+		color: rgba(255, 255, 255, 1);
+		display: inline-block;
+	}
+	
+	.center-contain-top-freezing {
+		color: rgba(243, 124, 120, 1);
+		display: inline-block;
+		margin-left: 39px;
+		margin-right: 36px;
+	}
+	
+	.center-contain-top-cleared {
+		color: rgba(132, 210, 204, 1);
+		display: inline-block;
+	}
+	
+	.center-contain-top-surplus {
+		color: rgba(231, 197, 59, 1);
+		margin-top: 12px;
+		/* display: inline-block; */
+	}
+	
+	#budget-stackEchart-histogram {
+		background: linear-gradient(271deg, #00365D 0%, #0065AE 52%, #003A64 100%);
+		/* opacity: 0.2; */
+	}
+	
+	.pancake-histogram {
+		display: inline-block;
+	}
+	
+	.pancakeContent {
+		padding: 0 14px;
+	}
+	
+	.pancake-text {
+		width: 108.5px;
+		height: 23.4px;
+		line-height: 23.4px;
+		background: linear-gradient(270deg, rgba(0, 141, 255, 0.1) 0%, #008DFF 50%, rgba(0, 141, 255, 0) 100%);
+		/* opacity: 0.5; */
+		text-align: center;
+	}
+	
+	.trainfee-pancake-histogram,
+	.receptionfee-pancake-histogram {
+		/* margin: 0 9px; */
+	}
+	.pancakeContent{
+		text-align: center;
+	}
+	/************************右边部分*************************/
+	.right-contain {
+		width: 330.5px;
+		height: 555px;
+		background: rgba(0, 132, 227, 0.15);
+		border: 2px solid rgba(0, 48, 96, 1);
+		display: inline-block;
+		position: absolute;
+		right: 27px;
+		/* margin-top: 2px; */
+	}
+	
+	.right-contain-top-title {
+		width: 336.5px;
+		height: 23.4px;
+		background: linear-gradient(270deg, rgba(0, 141, 255, 0.1) 0%, rgba(0, 141, 255, 1) 50%, rgba(0, 141, 255, 0) 100%);
+		/* opacity:0.5; */
+		text-align: center;
+	}
+	
+	.right-contain-top-content {
+		width: 203px;
+		height: 115px;
+		background-image: url(../img/form3.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 100%;
+		margin-top: 3px;
+		margin-left: 69px;
+	}
+	
+	.right-contain-top-asset {
+		padding-top: 14px;
+		padding-left: 20px;
+	}
+	
+	.right-contain-top-assetText {
+		height: 20.3px;
+		font-size: 14px;
+		font-family: Microsoft YaHei;
+		font-weight: 280;
+		line-height: 20.3px;
+		color: rgba(255, 255, 255, 1);
+	}
+	
+	.right-contain-top-assetFixed {
+		margin: 3px 0;
+	}
+	
+	.right-contain-top-assetIntangible {
+		margin-bottom: 4px;
+	}
+}
+
+@media only screen and (min-width:1920px) {
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	body,html {
+		width: 100%;
+		height: 100%;
+	}
+	/* echart容器宽高 */
+	#register-echart-histogram,#contract-echart-histogram{
+		height: 200px;
+	}
+	#budget-stackEchart-histogram{
+		height: 210px;
+		margin: 12px auto 0;
+	}
+	#meetfee-pancake,#trainfee-pancake,#travelfee-pancake,#receptionfee-pancake,#abroadfee-pancake{
+		width: 90px; 
+		height: 210px;
+		margin: 12px auto 0;
+	}
+	#scrap-Echart-histogram{
+		height: 210px;
+		margin: 12px auto 0;
+	}
+	#assetIntangible-echart-histogram,#assetFixed-echart-histogram,#assetFixedUse-echart-histogram,#assetScrap-echart-histogram{
+		height: 150px;
+		margin: 5px auto 0;
+	}
+	/************************整体*************************/
+	.brain {
+		position: relative;
+		width: 100%;
+		height: 969px;/* 978px�ĳ�969px   ��Ϊ̨ʽ�����ϳ��ֹ����� */
+		overflow: hidden;
+		background-color: #000B1F;
+	}
+
+	.title-bg {
+		width: 100%;
+		height: 103px;
+		background-image: url(../img/title2.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+
+	.bigScreenName {
+		width: 152px;
+		height: 37px;
+		font-size: 28px;
+		font-family: Microsoft YaHei;
+		font-weight: bold;
+		line-height: 37px;
+		color: rgba(255, 255, 255, 1);
+		letter-spacing: 15px;
+	}
+
+	.backHomePage {
+		width: 164px;
+		height: 30px;
+		background: linear-gradient(270deg, rgba(0, 141, 255, 0.1) 0%, rgba(0, 141, 255, 1) 50%, rgba(0, 141, 255, 0) 100%);
+		/* opacity:0.5; */
+		position: absolute;
+		right: 53px;
+		top: 30px;
+		text-align: center;
+		line-height: 30px;
+	}
+
+	/************************左边部分*************************/
+	.left-contain {
+		display: inline-block;
+	}
+
+	.left-contain-top {
+		width: 474px;
+		height: 397px;
+		background: rgba(0, 132, 227, 0.15);
+		border: 2px solid rgba(0, 48, 96, 1);
+		margin-left: 39px;
+		margin-bottom: 11px;
+	}
+
+	.left-contain-top-title {
+		width: 474px;
+		height: 30px;
+		background: linear-gradient(270deg, rgba(0, 141, 255, 0.1) 0%, rgba(0, 141, 255, 1) 50%, rgba(0, 141, 255, 0) 100%);
+		/* opacity:0.5; */
+		text-align: center;
+	}
+
+	.left-contain-top-content {
+		width: 350px;
+		height: 116px;
+		background-image: url(../img/form1.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 100%;
+		margin-top: 20px;
+		margin-left: 60px;
+	}
+
+	.left-contain-top-statText {
+		padding: 20px 10px 0 24px;
+	}
+
+	.left-contain-top-registered,
+	.left-contain-top-shopping,
+	.left-contain-top-totalTimes {
+		/* width:283px; */
+		height: 26px;
+		font-size: 20px;
+		font-family: Microsoft YaHei;
+		font-weight: 400;
+		line-height: 26px;
+
+	}
+
+	.left-contain-top-registered {
+		color: #84D2CC;
+	}
+
+	.left-contain-top-shopping {
+		color: #F5E46B;
+		margin: 4px 0;
+	}
+
+	.registerTimes,
+	.shoppingTimes {
+		color: rgba(255, 255, 255, 1);
+	}
+
+	.left-contain-top-totalTimes {
+		color: rgba(255, 255, 255, 1);
+	}
+
+	.left-contain-bottom-content {
+		width: 324px;
+		height: 152px;
+		background-image: url(../img/form2.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 100%;
+		margin-top: 20px;
+		margin-left: 78px;
+	}
+
+	.left-title,
+	.right-title {
+		width: 80px;
+		height: 26px;
+		font-size: 20px;
+		font-family: Microsoft YaHei;
+		font-weight: 400;
+		line-height: 26px;
+		color: rgba(255, 255, 255, 1);
+		opacity: 1;
+	}
+
+	.left-contain-bottom {
+		width: 474px;
+		height: 426px;
+		border: 2px solid rgba(0, 48, 96, 1);
+		background: rgba(0, 132, 227, 0.15);
+		margin-left: 39px;
+	}
+
+	.left-contain-bottom-contract {
+		padding-top: 17px;
+		padding-left: 46px;
+	}
+
+	.left-contain-bottom-text {
+		height: 26px;
+		font-size: 20px;
+		font-family: Microsoft YaHei;
+		font-weight: 400;
+		line-height: 26px;
+	}
+
+	.left-contain-bottom-executeing {
+		color: rgba(255, 255, 255, 1);
+	}
+
+	.left-contain-bottom-cleared {
+		color: rgba(132, 210, 204, 1);
+		margin: 4px 0;
+	}
+
+	.left-contain-bottom-unclear {
+		color: rgba(245, 228, 107, 1);
+		margin-bottom: 4px;
+	}
+
+	.left-contain-bottom-contractTimes {
+		color: rgba(243, 124, 120, 1);
+	}
+
+	/************************中间部分*************************/
+	.center-contain {
+		position: absolute;
+		display: inline-block;
+
+	}
+
+	.budgetContainer {
+		width: 877px;
+		height: 812px;
+		background: rgba(0, 132, 227, 0.15);
+		border: 2px solid rgba(0, 48, 96, 1);
+		margin-top: 25px;
+		margin-left: 11px;
+		margin-right: 11px;
+	}
+
+	.center-contain-title {
+		position: absolute;
+		left: 860px;
+		top: 29px;
+	}
+
+	.center-contain-top-title {
+		width: 877px;
+		height: 30px;
+		background: linear-gradient(270deg, rgba(0, 141, 255, 0.1) 0%, rgba(0, 141, 255, 1) 50%, rgba(0, 141, 255, 0) 100%);
+		/* opacity:0.5; */
+		text-align: center;
+	}
+
+	.center-title {
+		width: 80px;
+		height: 26px;
+		font-size: 20px;
+		font-family: Microsoft YaHei;
+		font-weight: 400;
+		line-height: 26px;
+		color: rgba(255, 255, 255, 1);
+		opacity: 1;
+	}
+
+	.center-contain-top-content {
+		margin-top: 17px;
+	}
+
+	.center-contain-top-budget {
+		width: 853px;
+		height: 105px;
+		background: rgba(0, 66, 127, 1);
+		margin: auto;
+		padding-top: 20px;
+		padding-left: 16px;
+	}
+
+	.center-contain-top-text {
+		height: 26px;
+		font-size: 20px;
+		font-family: Microsoft YaHei;
+		font-weight: bold;
+		line-height: 26px;
+	}
+
+	.center-contain-top-budgetAll {
+		color: rgba(255, 255, 255, 1);
+		display: inline-block;
+	}
+
+	.center-contain-top-freezing {
+		color: rgba(243, 124, 120, 1);
+		display: inline-block;
+		margin-left: 56px;
+		margin-right: 52px;
+	}
+
+	.center-contain-top-cleared {
+		color: rgba(132, 210, 204, 1);
+		display: inline-block;
+	}
+
+	.center-contain-top-surplus {
+		color: rgba(231, 197, 59, 1);
+		margin-top: 25px;
+	}
+
+	#budget-stackEchart-histogram {
+		background: linear-gradient(271deg, #00365D 0%, #0065AE 52%, #003A64 100%);
+		/* opacity: 0.2; */
+	}
+
+	.pancake-histogram {
+		display: inline-block;
+	}
+
+	.pancakeContent {
+		padding: 0 24px;
+	}
+
+	.pancake-text {
+		width: 143px;
+		height: 30px;
+		line-height: 30px;
+		background: linear-gradient(270deg, rgba(0, 141, 255, 0.1) 0%, #008DFF 50%, rgba(0, 141, 255, 0) 100%);
+		/* opacity: 0.5; */
+		text-align: center;
+	}
+
+	.trainfee-pancake-histogram,
+	.receptionfee-pancake-histogram {
+		margin: 0 20px;
+	}
+
+	/************************右边部分*************************/
+	.right-contain {
+		width: 474px;
+		height: 834px;
+		background: rgba(0, 132, 227, 0.15);
+		border: 2px solid rgba(0, 48, 96, 1);
+		display: inline-block;
+		position: absolute;
+		right: 21px;
+		margin-top: 2px;
+	}
+
+	.right-contain-top-title {
+		width: 474px;
+		height: 30px;
+		background: linear-gradient(270deg, rgba(0, 141, 255, 0.1) 0%, rgba(0, 141, 255, 1) 50%, rgba(0, 141, 255, 0) 100%);
+		/* opacity:0.5; */
+		text-align: center;
+	}
+
+	.right-contain-top-content {
+		width: 286px;
+		height: 148px;
+		background-image: url(../img/form3.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 100%;
+		margin-top: 20px;
+		margin-left: 78px;
+	}
+
+	.right-contain-top-asset {
+		padding-top: 21px;
+		padding-left: 20px;
+	}
+
+	.right-contain-top-assetText {
+		height: 26px;
+		font-size: 20px;
+		font-family: Microsoft YaHei;
+		font-weight: 400;
+		line-height: 26px;
+		color: rgba(255, 255, 255, 1);
+	}
+
+	.right-contain-top-assetFixed {
+		margin: 3px 0;
+	}
+
+	.right-contain-top-assetIntangible {
+		margin-bottom: 4px;
+	}
+}
